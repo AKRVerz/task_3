@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: Poppins, sans-serif;
+    background-color: #FEFBF6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #54BAB9;
+    padding: 15px;
+    color: #002B5B;
+    text-align: center;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container-header{
+    text-align: center;
+}
+
+.wrapper .container {
+    width: 1024px;
+    border-radius: 8px;
+    margin: 16px;
+    background: #cceeff;
+    padding: 16px;
+    flex-grow: 1;
+    height: fit-content;
+}
+.shadow {
+    box-shadow: 0 10px 10px rgba(154, 160, 185, .05), 0 15px 40px rgba(166, 173, 201, .2);
+}
+
+.text-h2{
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    height: 500px;
+    border-radius: 16px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-title {
+    margin: auto 0;
+}
+
+.form-group label {
+    margin-bottom: 4px;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+input[type=text],
+input[type=number] {
+    font-family: Poppins, sans-serif;
+    background: #F5F1FF;
+    border: 2px solid #6E85B7;
+    border-radius: 8px;
+    padding: 16px;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+    font-size: 24px;
+}
+
+input[type=text],
+input[type=number],
+.btn-submit:focus {
+    outline: none;
+}
+
+.btn-submit {
+    width: fit-content;
+    font-family: Raleway, sans-serif;
+    border-radius: 16px;
+    padding: 12px 24px;
+    border: 2px solid #30cde2;
+    color: black;
+    font-size: 16px;
+    margin-top: auto;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background: #30cde2;
+    color: white;
+}
+
+.check-button:hover, .undo-button:hover{
+    background-color: #30cde2;
+    color: white;
+}
+
+.check-button, .undo-button {
+    height: 40px;
+    border-radius: 10px;
+    background-color: #30cde2;
+    cursor: pointer;
+    border: none;
+}
+
+.trash-button {
+    height: 40px;
+    border-radius: 10px;
+    background-color: #e23030;
+    cursor: pointer;
+    border: none;
+    margin-left: 5px;
+}
+
+.trash-button:hover{
+    background-color: #e23030;
+    color: white;
+}

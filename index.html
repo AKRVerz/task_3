@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Library Books</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <h1>Welcome To My Library Books</h1>
+</header>
+    <div class="wrapper">
+        <div class="container shadow">
+            <h2 class="text-h2">Masukan Detail Buku</h2>
+            <form action="#" class="form" id="form">
+                <div class="form-group form-title">
+                    <label>Masukan Nama Buku</label>
+                    <input type="text" id="title" name="title" placeholder="Title" required>
+                </div>
+                <div class="form-group form-title">
+                    <label>Masukan Nama Author</label>
+                    <input type="text" id="author" name="author" placeholder="Author" required>
+                </div>
+                <div class="form-group form-title">
+                    <label>Masukan Tahun Buku</label>
+                    <input type="number" id="tahun" name="tahun" min="1900" placeholder="Year" required>
+                </div>
+                <div>
+                    <input type="checkbox" id="readClear" name="readClear">
+                    <label for="readClear"> Apakah Sudah Membaca?</label>
+                </div>
+                <input type="submit" value="Tambahkan Buku Pada Rak Yang Belum Dibaca?" name="Submit" class="btn-submit">
+            </form>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="form-group form-title">
+            <label>Masukan Pencarian</label>
+            <input type="text" id="search" name="search" placeholder="Masukan Kata Pencarian">
+        </div>
+    </div>
+    <div class="wrapper">    
+        <div class="container">
+            <h2 class="container-header">Yang Belum Dibaca</h2>
+            <div class="list-item" id="todos">
+            </div>
+        </div>
+    
+        <div class="container">
+            <h2 class="container-header">Yang Sudah Selesai Dibaca</h2>
+            <div class="list-item" id="completed-todos">
+            </div>
+        </div>
+    </div>
+
+    <script src="javascript/script.js"></script>
+</body>
+</html>
